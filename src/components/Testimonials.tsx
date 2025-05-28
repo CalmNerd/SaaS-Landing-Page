@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const testimonials = [
   {
     id: 1,
-    quote: "Alice allowed us to scale outbound efforts without sacrificing personalization. It's been a crucial multiplier for our team.",
+    quote: "AgentCore allowed us to automate our entire data pipeline without sacrificing quality. It's been a crucial multiplier for our engineering team.",
     name: "Matthew Lenhart",
     title: "Senior Manager, Sales Ops & Strategy at Otter.ai",
     company: "Otter.ai",
@@ -14,7 +14,7 @@ const testimonials = [
   },
   {
     id: 2,
-    quote: "Mike allows us to retarget hundreds of thousands of old leads. It's like unlocking a new opportunity we never thought was possible.",
+    quote: "Our agents process millions of records daily. It's like unlocking operational capacity we never thought was possible.",
     name: "Sales Team",
     title: "Connecteam",
     company: "Connecteam",
@@ -23,7 +23,7 @@ const testimonials = [
   },
   {
     id: 3,
-    quote: "With Mike, we could reach customers in languages we couldn't otherwise support.",
+    quote: "With AgentCore, we handle complex workflows in languages and processes we couldn't otherwise support.",
     name: "Growth Marketing",
     title: "Spectinga",
     company: "Spectinga",
