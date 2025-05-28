@@ -16,7 +16,7 @@ const HowItWorks = () => {
       description: "Our AI comprehensively maps your business processes, identifying bottlenecks, inefficiencies, and automation opportunities across all operational touchpoints.",
       highlightText: "AI identifies:",
       highlightDetails: "Process gaps, optimization points, and automation potential",
-      gifUrl: "/lovable-uploads/50d7bc89-98fd-49a5-b67f-94230c5d3ca5.png"
+      gifUrl: "/uploads/50d7bc89-98fd-49a5-b67f-94230c5d3ca5.png"
     },
     {
       id: 2,

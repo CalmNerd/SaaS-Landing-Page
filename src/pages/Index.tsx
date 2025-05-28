@@ -52,7 +52,7 @@ const Index = () => {
               {/* Background Image with Overlay */}
               <div className="absolute inset-0 z-0">
                 <img
-                  src="/lovable-uploads/eada8c8b-332c-4ac7-813d-42884f942368.png"
+                  src="/uploads/eada8c8b-332c-4ac7-813d-42884f942368.png"
                   alt="Team Collaboration"
                   className="w-full h-full object-cover object-center opacity-50"
                 />
