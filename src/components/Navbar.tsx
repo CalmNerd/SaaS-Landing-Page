@@ -27,12 +27,13 @@ const Navbar = () => {
     >
       <div className="container max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center">
-          <a href="/" className="flex items-center">
-            <img 
+          <a href="/" className="flex items-center gradient-text font-bold text-xl md:text-2xl">
+            {/* <img 
               src="/chillbot.gif" 
               alt="ChillBot Logo" 
               className="h-8 md:h-10 object-cover"
-            />
+            /> */}
+            ChillBot.ai
           </a>
         </div>
         
