@@ -29,9 +29,9 @@ const Navbar = () => {
         <div className="flex items-center">
           <a href="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/ce207080-f6c2-430d-9621-79d32ab08655.png" 
-              alt="Convrt.ai Logo" 
-              className="h-8 md:h-10"
+              src="/chillbot.gif" 
+              alt="ChillBot Logo" 
+              className="h-8 md:h-10 object-cover"
             />
           </a>
         </div>

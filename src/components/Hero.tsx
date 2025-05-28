@@ -34,7 +34,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen pt-20 pb-32 overflow-hidden bg-[#F9F6F3]">
       <AnimatedBackground />
-      
+
       <div className="container-section relative z-10">
         <motion.div
           initial="hidden"
@@ -42,29 +42,29 @@ const Hero = () => {
           variants={containerVariants}
           className="max-w-5xl mx-auto text-center"
         >
-          <motion.div 
+          <motion.div
             variants={itemVariants}
             className="inline-flex items-center px-4 py-2 rounded-full bg-convrt-purple/10 text-convrt-purple mb-6"
           >
             <Zap className="w-4 h-4 mr-2" />
-            <span className="text-sm font-medium font-inter tracking-wide">The First AI Organic Outbound Platform</span>
+            <span className="text-sm font-medium font-inter tracking-wide">The First AI Agent Automation Platform</span>
           </motion.div>
-          
-          <motion.h1 
+
+          <motion.h1
             variants={itemVariants}
-            className="font-inter font-bold text-4xl md:text-5xl lg:text-7xl tracking-tight max-w-4xl mx-auto mb-6 text-convrt-dark-blue leading-[1.1]"
+            className="font-inter md:whitespace-nowrap font-bold text-4xl md:text-5xl lg:text-7xl tracking-tight max-w-4xl mx-auto mb-6 text-convrt-dark-blue leading-[1.1]"
           >
-            From <span className="text-[#EA384C] font-extrabold">Ignored</span> to <span className="text-[#6936F5] font-extrabold">Influential</span>
+            From <span className="text-[#EA384C] font-extrabold">Manual</span> to <span className="text-[#6936F5] font-extrabold">Automation</span>
           </motion.h1>
-          
-          <motion.p 
+
+          <motion.p
             variants={itemVariants}
             className="font-inter text-xl text-convrt-dark-blue/80 max-w-3xl mx-auto mb-8 leading-relaxed"
           >
-            AI that makes buyers trust you, so you win more deals
+            AI agents that run your workflows end-to-end, so you can focus on strategy.
           </motion.p>
-          
-          <motion.div 
+
+          <motion.div
             variants={itemVariants}
             className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-16"
           >
@@ -76,15 +76,15 @@ const Hero = () => {
               See How It Works
             </a>
           </motion.div>
-          
+
           {/* Modern Platform Showcase */}
-          <motion.div 
+          <motion.div
             ref={demoRef}
             variants={itemVariants}
           >
             <PlatformDemo />
           </motion.div>
-          
+
           {/* Stats Section - Enhanced with better styling and icons */}
           <StatsSection statsRef={statsRef} />
         </motion.div>
