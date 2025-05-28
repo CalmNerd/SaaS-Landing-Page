@@ -1,6 +1,6 @@
 
-import React, { useState } from 'react';
-import { Target, Users, LineChart } from 'lucide-react';
+import { useState } from 'react';
+import { Target, LineChart, Bot } from 'lucide-react';
 import StepContent from './how-it-works/StepContent';
 import { motion } from 'framer-motion';
 
@@ -12,17 +12,17 @@ const HowItWorks = () => {
     {
       id: 1,
       icon: <Target className="w-4 h-4" />,
-      title: "AI Identifies Where Your Buyers Engage",
-      description: "Our AI scans social media to find where your target audience is most active, identifying the exact channels, topics, and content they engage with.",
+      title: "AI Analyzes Your Workflows",
+      description: "Our AI comprehensively maps your business processes, identifying bottlenecks, inefficiencies, and automation opportunities across all operational touchpoints.",
       highlightText: "AI identifies:",
-      highlightDetails: "Relevant conversations, active communities, and engagement opportunities",
+      highlightDetails: "Process gaps, optimization points, and automation potential",
       gifUrl: "/lovable-uploads/50d7bc89-98fd-49a5-b67f-94230c5d3ca5.png"
     },
     {
       id: 2,
-      icon: <Users className="w-4 h-4" />,
-      title: "AI Auto-Warms & Builds Trust",
-      description: "Convrt creates meaningful touchpoints that position you as a trusted advisor by engaging with prospects' content and contributing value.",
+      icon: <Bot className="w-4 h-4" />,
+      title: "AI Deploys Intelligent Agents",
+      description: "AgentCore creates specialized AI agents that seamlessly integrate with your systems, learning your business logic.",
       highlightText: "AI automates:",
       highlightDetails: "Targeted comments, relevant reactions, and personalized interactions",
       gifUrl: "https://api.microlink.io?url=https%3A%2F%2Fgiphy.com%2Fgifs%2Frevolutioncomedy-handshake-revolutioncomedy-icommitcombustion-kFHbqSdogIS0qtX6Pf&embed=true&screenshot=true&meta=false"
@@ -30,8 +30,8 @@ const HowItWorks = () => {
     {
       id: 3,
       icon: <LineChart className="w-4 h-4" />,
-      title: "AI Converts Warm Leads Into Pipeline",
-      description: "With pre-established trust, your outreach achieves 15x higher conversion rates, turning social connections into qualified leads and deals.",
+      title: "AI Optimizes & Scales Operations",
+      description: "With autonomous agents handling routine operations, your business achieves 18x faster execution, perfect accuracy, and unlimited scalability while you focus on strategic growth.",
       highlightText: "AI delivers:",
       highlightDetails: "Warmed leads, engagement analytics, and conversion opportunities",
       gifUrl: "https://api.microlink.io?url=https%3A%2F%2Fgiphy.com%2Fgifs%2Fchart-jtECu4TAPnhbGv2iwx&embed=true&screenshot=true&meta=false"
@@ -47,16 +47,14 @@ const HowItWorks = () => {
       <div className="container-section py-4">
         <div className="max-w-3xl mx-auto text-center mb-6">
           <div className="section-tag">
-            From Ignored to Trusted
+            From Manual to Autonomous
           </div>
           <h2 className="heading-lg text-convrt-dark-blue mb-4">
-            How <span className="gradient-text">Convrt.ai</span> Works in 3 Steps
+            How <span className="gradient-text">ChillBot</span> Works in 3 Steps
           </h2>
           <p className="text-convrt-dark-blue/80 text-lg max-w-2xl mx-auto">
-            Our AI-driven platform automates social engagement for your sales and GTM teams, transforming cold outreach into warm connections.
-          </p>
+            Our AI-driven platform deploys intelligent agents across your workflows, transforming manual operations into autonomous systems.</p>
         </div>
-        
         <div className="max-w-5xl mx-auto bg-gray-100 rounded-2xl overflow-hidden">
           <div className="flex flex-col lg:flex-row h-[600px]">
             {/* Steps Section - Now on the left */}
@@ -75,26 +73,26 @@ const HowItWorks = () => {
                 />
               ))}
             </div>
-            
+
             {/* Image Display - Now covering the entire right section */}
             <div className="lg:w-2/3 relative h-full">
               {steps.map((step) => (
-                <motion.div 
+                <motion.div
                   key={step.id}
                   className="absolute inset-0 h-full w-full"
                   initial={{ opacity: 0 }}
-                  animate={{ 
+                  animate={{
                     opacity: activeStep === step.id ? 1 : 0,
                     zIndex: activeStep === step.id ? 10 : 1
                   }}
-                  transition={{ 
-                    duration: 0.5, 
+                  transition={{
+                    duration: 0.5,
                     ease: "easeInOut"
                   }}
                 >
-                  <img 
-                    src={step.gifUrl} 
-                    alt={`Step ${step.id}: ${step.title}`} 
+                  <img
+                    src={step.gifUrl}
+                    alt={`Step ${step.id}: ${step.title}`}
                     className="w-full h-full object-cover object-center"
                   />
                 </motion.div>
